@@ -210,6 +210,7 @@ bash scripts/check-redjudge-evals.sh
 
 - 当前版本：`v1.0.0`
 - 后续版本建议用 GitHub Releases 管理：`https://github.com/gaoyechen/redjudge/releases`
+- 版本发布记录同时维护在 `CHANGELOG.md`
 - 建议遵循 `v1.0.x` / `v1.1.0` / `v2.0.0` 这样的语义化版本
 - 发版时至少记录：
   - 这一版改了什么
