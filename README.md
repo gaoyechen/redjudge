@@ -206,16 +206,14 @@ bash scripts/check-redjudge-evals.sh
 
 ---
 
-## 版本管理与发版
+## 版本说明
 
 - 当前版本：`v1.0.0`
-- 后续版本建议用 GitHub Releases 管理：`https://github.com/gaoyechen/redjudge/releases`
-- 版本发布记录同时维护在 `CHANGELOG.md`
-- 建议遵循 `v1.0.x` / `v1.1.0` / `v2.0.0` 这样的语义化版本
-- 发版时至少记录：
-  - 这一版改了什么
-  - 哪些验证通过了
-  - 下一版优先做什么
+- 正式发布页：`https://github.com/gaoyechen/redjudge/releases`
+- 变更记录：`https://github.com/gaoyechen/redjudge/blob/main/CHANGELOG.md`
+- 版本管理采用语义化版本：`v1.0.x` 用于小修复，`v1.1.0` 用于功能增强，`v2.0.0` 用于较大改动。
+- 每次发版至少同步记录：这次改了什么、哪些验证通过了、下一版优先做什么。
+- 当前 `SKILL.md` frontmatter 不单独维护 `version` 字段，版本信息以 GitHub Release 和 `CHANGELOG.md` 为准。
 
 ---
 
