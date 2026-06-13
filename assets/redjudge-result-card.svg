@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">RedJudge result card</title>
+  <desc id="desc">A showcase card illustrating a RedJudge revise verdict with evidence boundary, top risks, weighted total, and next validation.</desc>
+  <rect width="1200" height="760" fill="#0b0f19"/>
+  <rect x="70" y="60" width="1060" height="640" rx="28" fill="#111827" stroke="#ef4444" stroke-width="3"/>
+  <text x="110" y="130" fill="#f9fafb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="54" font-weight="800">RedJudge Verdict</text>
+  <text x="110" y="180" fill="#fca5a5" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28">Risk verdicts, not vibes.</text>
+  <line x1="110" y1="215" x2="1090" y2="215" stroke="#374151" stroke-width="2"/>
+
+  <text x="110" y="275" fill="#e5e7eb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Object</text>
+  <text x="300" y="275" fill="#f9fafb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30">AI 求职陪练 App · product strict</text>
+
+  <text x="110" y="330" fill="#e5e7eb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Evidence Boundary</text>
+  <text x="410" y="330" fill="#d1d5db" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28">Input evidence + unverified market assumptions</text>
+
+  <text x="110" y="400" fill="#f9fafb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="800">Top Risks</text>
+  <text x="145" y="455" fill="#fecaca" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28">1. 目标用户过宽，核心场景不成立 🔴</text>
+  <text x="145" y="505" fill="#fde68a" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28">2. 四个大功能并列，MVP 焦点被稀释 🟡</text>
+  <text x="145" y="555" fill="#fde68a" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28">3. 49 元/月 + 投流的商业账未成立 🟡</text>
+
+  <rect x="110" y="600" width="300" height="70" rx="18" fill="#7f1d1d"/>
+  <text x="140" y="646" fill="#fff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="800">revise · 40</text>
+
+  <text x="450" y="626" fill="#e5e7eb" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">Next validation:</text>
+  <text x="450" y="662" fill="#d1d5db" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24">24h 小红书测试，验证 2 人是否愿付定金</text>
+</svg>

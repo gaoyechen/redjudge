@@ -1,0 +1,75 @@
+{
+  "skill_name": "redjudge",
+  "evals": [
+    {
+      "id": 1,
+      "name": "product-strict-ai-job-coach",
+      "prompt": "/RedJudge product strict：我想做一个 AI 求职陪练 App，目标是 25-35 岁想转行互联网的人。功能包括模拟面试、简历改写、岗位推荐和学习计划。定价 49 元/月。先做微信小程序，靠小红书投流获客。你帮我判断靠不靠谱。",
+      "expected_output": "A strict product review with Evidence Boundary, 5 risk items, product dimensions, revise/abandon/continue verdict bound to weighted score, and one concrete validation action.",
+      "files": [],
+      "expectations": [
+        "Includes an Evidence Boundary that marks CAC, competitors, platform conversion, and job-market facts as unverified unless verified.",
+        "Red Scan contains 5 risks because strict mode is requested.",
+        "Every Red Scan risk includes evidence level, evidence, and why it matters.",
+        "Value Confirmation appears after Red Scan and stays shorter than the risk section.",
+        "Verdict is one of continue/revise/abandon and includes a weighted total.",
+        "If verdict is revise, exactly one highest-leverage change is given.",
+        "Next Validation is one concrete action, not a long checklist."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "article-ai-programming-claim",
+      "prompt": "用 RedJudge article 评审这段文章观点：年轻人不应该学编程了，因为 AI 已经能写大部分代码。未来程序员岗位会消失，所以普通人应该直接学习产品思维和商业模式。文章准备用在公众号，目标读者是想转行的职场人。",
+      "expected_output": "An article review that challenges absolute claims, labels unverified external facts, identifies false dichotomy risk, and recommends one thesis-level revision.",
+      "files": [],
+      "expectations": [
+        "Classifies the object as article.",
+        "Labels claims about AI coding ability and programmer job disappearance as unverified unless verified externally.",
+        "Identifies the over-absolute thesis as a major or fatal risk.",
+        "Identifies the false dichotomy between programming and product/business thinking.",
+        "Uses article dimensions from the rubric or clearly equivalent custom dimensions.",
+        "Verdict obeys scoring rules and does not give continue below 65."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "vague-ai-education-boundary",
+      "prompt": "帮我评估一下：AI 教育。",
+      "expected_output": "No full review. The assistant asks for more context because the object is too vague and under 50 Chinese characters.",
+      "files": [],
+      "expectations": [
+        "Does not produce a full RedJudge Review.",
+        "Explains that the input is too vague or under-specified.",
+        "Asks for object, target user/audience, goal, and evaluation angle or material.",
+        "Does not invent a product, article, or market context."
+      ]
+    },
+    {
+      "id": 4,
+      "name": "quick-mode-plan-risk",
+      "prompt": "/RedJudge quick：我们准备把登录系统从短信验证码切到邮箱验证码，一周内上线。团队说风险不大。帮我快速判断。",
+      "expected_output": "A quick review only: Review Object, Risk Scan, Verdict, Next Validation. It should avoid the full multi-role/value-confirmation template.",
+      "files": [],
+      "expectations": [
+        "Uses quick-mode structure, not the full review template.",
+        "Includes Evidence Boundary.",
+        "Risk Scan mentions security, deliverability/account recovery/user migration or similar relevant risks.",
+        "Provides verdict and one next validation.",
+        "Does not include a long Multi-Perspective Review section."
+      ]
+    },
+    {
+      "id": 5,
+      "name": "positive-only-near-miss",
+      "prompt": "我只想要正面反馈，不要批评。帮我夸一下这个商业计划。",
+      "expected_output": "The assistant should not run RedJudge as a critique protocol; it should state the mismatch and ask whether the user wants risk review.",
+      "files": [],
+      "expectations": [
+        "Does not run a RedJudge risk review by default.",
+        "Explains that RedJudge is for critique/risk review, not positive-only feedback.",
+        "Asks whether the user wants RedJudge despite the positive-only request or proceeds without invoking RedJudge."
+      ]
+    }
+  ]
+}
