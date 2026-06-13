@@ -6,8 +6,11 @@
 
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-redjudge-blueviolet)](SKILL.md)
 [![Validate](https://github.com/gaoyechen/redjudge/actions/workflows/validate.yml/badge.svg)](https://github.com/gaoyechen/redjudge/actions/workflows/validate.yml)
+[![Version](https://img.shields.io/github/v/tag/gaoyechen/redjudge?label=version&sort=semver)](https://github.com/gaoyechen/redjudge/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Evidence Aware](https://img.shields.io/badge/review-evidence--aware-red)](SKILL.md)
+
+**当前版本：** [v1.0.0](https://github.com/gaoyechen/redjudge/releases/tag/v1.0.0)
 
 **RedJudge 把“帮我看看靠谱吗”变成一份 evidence-aware red-team verdict：先扫风险，再确认价值，最后给出 continue / revise / abandon 裁决。**
 
@@ -200,6 +203,18 @@ bash scripts/check-redjudge-evals.sh
 3. vague input：必须先索要上下文；
 4. quick mode：必须输出压缩版，不跑完整长评审；
 5. positive-only near miss：必须拒绝把 RedJudge 用成夸奖工具。
+
+---
+
+## 版本管理与发版
+
+- 当前版本：`v1.0.0`
+- 后续版本建议用 GitHub Releases 管理：`https://github.com/gaoyechen/redjudge/releases`
+- 建议遵循 `v1.0.x` / `v1.1.0` / `v2.0.0` 这样的语义化版本
+- 发版时至少记录：
+  - 这一版改了什么
+  - 哪些验证通过了
+  - 下一版优先做什么
 
 ---
 

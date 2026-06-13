@@ -1,6 +1,6 @@
 ---
 name: redjudge
-description: |
+description:
   Use RedJudge whenever the user asks for a rigorous critique, red-team review, adversarial review, risk assessment, decision evaluation, or structured judgment of an idea, article, product, proposal, plan, strategy, draft, PRD, or pitch. Trigger even if the user only says 评价、评审、挑毛病、靠不靠谱、风险、判断一下、RedJudge, /RedJudge, devil's advocate, red team this, or poke holes in this. RedJudge delivers an evidence-aware verdict — continue / revise / abandon — by setting an Evidence Boundary, scanning risks before praise, labeling facts vs assumptions, using matched reviewer roles, scoring with a rubric, and giving exactly one next validation. Do not use for encouragement-only feedback, open-ended brainstorming, factual lookup, direct execution, ordinary copyediting, or positive-only polishing unless the user explicitly wants critique.
 ---
 
