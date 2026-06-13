@@ -138,3 +138,28 @@ Remaining warnings are intentional because they require publication targets rath
 - `.claude-plugin/marketplace.json` is still absent.
 - There is a static SVG showcase, but no GIF/video recording yet.
 - skills.sh badge is absent until the skill has a real published `<owner>/<repo>` location.
+
+## GitHub publication update — 2026-06-13
+
+RedJudge was published as a public GitHub repository:
+
+- Repository: https://github.com/gaoyechen/redjudge
+- Owner: `gaoyechen`
+- Visibility: public
+- Default branch: `main`
+- Initial publish commit: `8b206c9becbfb4e9b802964bc23ffa5b0860f31c`
+- Topics: `agent-skills`, `ai-agents`, `critique`, `red-team`, `risk-assessment`
+- CI: `.github/workflows/validate.yml` runs `python scripts/check-redjudge-evals.py` and JSON validation on push/PR.
+
+Post-publish validation:
+
+- Public clone from `https://github.com/gaoyechen/redjudge.git` succeeded.
+- `python scripts/check-redjudge-evals.py` passed in the public clone.
+- GitHub Actions run `27454082065` completed successfully.
+- README contains the real install command: `npx skills add gaoyechen/redjudge`.
+
+Remaining publishing work:
+
+- Do not add a skills.sh badge yet: `https://skills.sh/b/gaoyechen/redjudge` returned a real SVG response but the badge text was `resource not found` at publish time, so adding it would mislead readers.
+- Add `.claude-plugin/marketplace.json` only if targeting Claude plugin marketplace / ClawHub-style distribution.
+- Add a GIF or VHS tape if doing a marketplace showcase beyond the static SVG result card.
